@@ -47,9 +47,10 @@ API Hook Integration uses SOA Software's Products to integrate lead generation t
 
 
 #### Verify Connectivity
-- Using curl -H "Content-Type: application/json" -d '{"FirstName":"Paul","LastName":"Pogo40","Company":"SOA","Street":"2962 Rosemary LN NE","City":"Rochester","State":"MN","PostalCode":"55906","Email":"paul40@soa.com"}' http://Win7-64-vm:9905/leads_vs1/leads (Make sure you use a unique value for both the Email and LastName values)
+- Using 
+    curl -H "Content-Type: application/json" -d '{"FirstName":"Paul","LastName":"Pogo40","Company":"SOA","Street":"2962 Rosemary LN NE","City":"Rochester","State":"MN","PostalCode":"55906","Email":"paul40@soa.com"}' http://Win7-64-vm:9905/leads_vs1/leads (Make sure you use a unique value for both the Email and LastName values)
 - The correct response should be:
-{"FirstName":"Paul","LastName":"Pogo40","Company":"SOA","Street":"2962 Rosemary LN NE","City":"Rochester","State":"MN","PostalCode":"55906","Email":"paul40@soa.com","SalesForceId":"00Q60000017Ar19EAC","SignUpStatus":{"salesForceStatus":"Success","MailGunStatus":"Success","Box":"Success"}}
+    {"salesForceStatus":"Success","Box":"Success"}
 - Log in to your Box Account [Box] (https://app.box.com)
 - ensure that there is a "Lead" folder.
 - open the "Lead" folder and ensure there is a "leads.txt" file
