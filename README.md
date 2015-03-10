@@ -6,16 +6,8 @@ API Hook Integration uses SOA Software's Products to integrate lead generation t
 - API Documentation: [Box Content API docs] (https://developers.box.com/docs/)
 
 ### Pre-Reqs
-- Create a Box Developer account at [Box Developers] (https://app.box.com/developers/services)
-- Click on the "Create a Box Application" right hand menu item
-- enter the name of the application (any name you wish) into the "Application Name" field displayed, and ensure that the "Box content" radio button is selected
-- Click the "Create Application" button
-- If you are not already taken to the App you just created:
-    - Click on the "My Applications" right menu item
-    - Click the "Edit Application" button next to your newly created App
-- go to the "OAuth2 Parameters" section
-- Click the "Create a Developer Token" button
-- Copy the generated Token (This token has a 30 minute life)
+- Install the Box API Hook
+- See the Box API Hook Pre-Reqs
 
 ### Getting Started Instructions
 #### Download and Import
@@ -32,18 +24,7 @@ API Hook Integration uses SOA Software's Products to integrate lead generation t
 - Expand the services folder in the Google Sheets API Hook you imported and find TrialLeads_API_vs1 VS
 
 #### Configure Security
-- select the TrialLeads_API_vs1 VS
-- select the "Operations" tab, then the "POST /leads" operation, then the "Process" tab for the operation.
-- Double click on the "ConfigureSmartyStreet" script activity 
-- Put in your Auth ID value into the "newQueryString" after the "auth-id=" and Auth Token after the "auth-token="
-- save the script activity
-- select the save process icon
-- Select the "PostLeadToBox" process in the Processes branch
-- Select the "Process" tab
-- Double click on the "Initialise Bearer Token" script activity
-- replace the value in the "processContext.setVariable("Bearer","BAJKzHbVsE7o66zIJ0iGXa3gU4sdRIRw");" line with the token you copied from the Box Developer site
-- Click the Finish button
-- Click the save process icon
+- See Configure Security in the Box API Hook
 
 
 #### Verify Connectivity
