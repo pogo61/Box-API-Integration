@@ -12,8 +12,8 @@ API Hook Integration uses SOA Software's Products to integrate lead generation t
 - API Documentation: [Box Content API docs] (https://developers.box.com/docs/)
 
 ### Pre-Reqs
-- Install the Box API Hook
-- See the Box API Hook Pre-Reqs
+- Ensure that the [Box API Hook](https://github.com/pogo61/Box-API-Hook) is installed
+- Ensure that the [Salesforce API Hook](https://github.com/pogo61/SalesForce-API-Hook) is installed
 
 ### Getting Started Instructions
 #### Download and Import
